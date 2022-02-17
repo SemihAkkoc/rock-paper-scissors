@@ -2,13 +2,13 @@ import random
 
 rps_dictionary = {0: 'ROCK',
                  1: 'PAPER',
-                 2: 'SCISSOR'}
+                 2: 'SCISSORS'}
 
 possible_list = [(0, 0, 'Tie'), (0, 2, 'Win'), (0, 1, 'Lose'),
                 (1, 0, 'Win'), (1, 2, 'Lose'), (1, 1, 'Tie'),
                 (2, 0, 'Lose'), (2, 2, 'Tie'), (2, 1, 'Win')]
 
-user_choice = int(input('Chose between rock(0), paper(1), scissor(2): '))
+user_choice = int(input('Chose between rock(0), paper(1), scissors(2): '))
 comp_choice = random.randint(0, 2)
 
 curr_choice = [(user_choice, comp_choice)]
